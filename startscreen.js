@@ -1,7 +1,7 @@
 //screen 0,start screen
 function startscreen(){
-    image(foodie,0,0,width, height);//foodie background
-    fill(0);
+    image(startBg,0,0,width, height);//dark background
+    fill(255);
     textAlign(CENTER);
     textSize(20);
     textFont("DMSerifDisplay");
@@ -10,7 +10,7 @@ function startscreen(){
     //Create the start button:
     if (!startButton){
         startButton=createSprite(width/2, height/2 +130,130,48);
-        startButton.shapeColor=color("#F4A259");
+        startButton.shapeColor=color("#cad8fd");
         startButton.text="Start";
         startButton.textSize= 22;
         startButton.textColor="black";
@@ -25,8 +25,8 @@ function startscreen(){
 
 //screen 1,character screen
 function screen1(){
-    image(foodie1,0,0,width,height);// warm color background, with food on 
-    fill(0);
+    image(startBg,0,0,width, height);
+    fill(255);
     textAlign(CENTER);
     textSize(24);
     text("Choose Your Character",width/2,90);
@@ -79,7 +79,7 @@ function gotoPreface(){
 }
 
 function screen2(){
-    background(255,245,230);
+    image(startBg,0,0,width, height)
     fill(0);
     textAlign(CENTER);
     textFont("DM Serif Display");
@@ -89,9 +89,10 @@ function screen2(){
     //Introduction
     textAlign(LEFT);
     textSize(15);
-    text("Every year, the world throws away over 1 billion tonnes of food — while nearly 800 million people don't have enough to eat.\n"+
-        "Most of that waste happens in wealthier, developed countries.\n"+
-        "In this story, we are going to explore more about food waste and junk food through minigame and scenerios.",
+    text("Every person carries a tiny star inside them--quiet, steady, waiting. It is called--hope.\n"+
+        "No one knows when their story will end, but everyone gets to choose what path they walk.\n"+
+        "Some choice are dark, some choice are bright. Somewhere along this journey, five gems are hidden, each holding a single letter--fragement of a word almost forgotten.\n"+
+        "Only those who collect every Gem will discover the truth their star has been trying to reveal, Your Journey begins now.",
     30,110,width-60);
 
     //Show Chosen character:
@@ -110,6 +111,6 @@ function screen2(){
         prefaceButton.remove();
         prefaceButton=null;
         prefaceShown=true;
-        screen=3;
+        
      }
 }
