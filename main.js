@@ -58,13 +58,13 @@ function windowResized(){
 }
 
 /*setup runs once*/
-function draw(){
-    console.log("Drawing screen:",screen);
-    if (screen==0){
+function draw() {
+    console.log("Drawing screen:", screen);
+    if (screen == 0) {
         startscreen();
-    }else if (screen==1){
+    } else if (screen == 1) {
         screen1();
-    }else if (screen==2){
+    } else if (screen == 2) {
         screen2();
     }
-}
+} 
