@@ -35,8 +35,8 @@ let prefaceShown =false;
 
 /* PRELOAD LOADS FILES */
 function preload() {
-    charImg1=loadImage("assets/max.jpg");
-    charImg2=loadImage("assets/maya.jpg");
+    charImg1=loadImage("assets/max.png");
+    charImg2=loadImage("assets/maya.png");
     startBg=loadImage("assets/start.jpg")
     mini1=loadImage("assets/mini1.jpg");
     //rottenFoodImage={
