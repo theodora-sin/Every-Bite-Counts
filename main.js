@@ -39,14 +39,6 @@ function preload() {
     charImg2=loadImage("assets/maya.jpg");
     startBg=loadImage("assets/start.jpg")
     mini1=loadImage("assets/mini1.jpg");
-    rottenFoodImage={
-        apple:loadImage("assets/apple.png"),
-        avocado:loadImage("assets/avocado.png"),
-        canfish:loadImage("assets/canfish.png"),
-        fishcan:loadImage("assets/fishcan.png"),
-        flour:loadImage("assets/flour.png"),
-    }
-}
 
 
 function setup(){
