@@ -39,7 +39,7 @@ function preload() {
     charImg2=loadImage("assets/maya.jpg");
     startBg=loadImage("assets/start.jpg")
     mini1=loadImage("assets/mini1.jpg");
-
+}
 
 function setup(){
     createCanvas(400,800);
