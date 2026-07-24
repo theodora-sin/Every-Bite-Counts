@@ -2,7 +2,7 @@
 let screen;
 
 //background
-let bg0,chat,mini1, street, foodie, foodie;
+let bg0,chat,mini1, street, foodie, foodie1;
 
 //Screen0
 let startButton;
