@@ -1,6 +1,6 @@
 /* Global Variables */
 let screen=0;
-
+let canvas;
 
 //Screen0
 let startButton;
@@ -48,22 +48,22 @@ function preload() {
     //}
 }
 
-function setup(){
-    createCanvas(400,800);
+
+function setup() {
+    canvas = createCanvas(400, 800);
     fitCanvasToWindow();
 }
 
-function fitCanvasToWindow(){
-    const scaleFactor=min(windowWidth/400, windowHeight/800);
-    const canvasE1=document.querySelector("canvas");
-    canvasE1.style.width=(400*scaleFactor)+"px";
-    canvasE1.style.height=(800*scaleFactor)+"px";    
+function fitCanvasToWindow() {
+    const scaleFactor = min(windowWidth / 400, windowHeight / 800);
+
+    canvas.elt.style.width = (400 * scaleFactor) + "px";
+    canvas.elt.style.height = (800 * scaleFactor) + "px";
 }
 
-function windowResized(){
+function windowResized() {
     fitCanvasToWindow();
 }
-
 /*setup runs once*/
 function draw() {
     console.log("Drawing screen:", screen);
